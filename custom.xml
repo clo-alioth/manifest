@@ -13,4 +13,16 @@
 
   <!-- Chromium Browser (GrapheneOS) -->
   <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos-gitlab" clone-depth="1" />
+
+  <!-- Device -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="CLO-alioth/android_device_qcom_common"
+           remote="github" revision="tasty">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="CLO-alioth/android_device_qcom_sepolicy_vndr"
+           remote="github" revision="tasty"/>
+
 </manifest>
