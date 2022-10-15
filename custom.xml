@@ -25,4 +25,7 @@
   <project path="device/qcom/sepolicy_vndr" name="CLO-alioth/android_device_qcom_sepolicy_vndr"
            remote="github" revision="tasty"/>
 
+  <!-- Frameworks base -->
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="CLO-alioth/android_frameworks_base" remote="github" revision="tasty"/>
 </manifest>
