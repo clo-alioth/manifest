@@ -62,4 +62,9 @@
   <remove-project name="platform/external/fastrpc" />
   <project path="external/fastrpc" name="CLO-alioth/android_external_fastrpc" remote="github" revision="tasty" />
 
+  <!-- Vibrator -->
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="CLO-alioth/android_vendor_qcom_opensource_vibrator"
+           remote="github" revision="tasty"/>
+
 </manifest>
