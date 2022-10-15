@@ -40,4 +40,8 @@
   <!-- SeedVault -->
   <project path="external/seedvault" name="GrapheneOS/platform_external_seedvault" remote="github" revision="13"/>
 
+  <!-- Link display configs -->
+  <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+  <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+
 </manifest>
