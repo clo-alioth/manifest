@@ -67,4 +67,8 @@
   <project path="vendor/qcom/opensource/vibrator" name="CLO-alioth/android_vendor_qcom_opensource_vibrator"
            remote="github" revision="tasty"/>
 
+  <!-- WFD -->
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="CLO-alioth/android_vendor_qcom_opensource_commonsys-intf_wfd"
+           remote="github" revision="tasty"/>
+
 </manifest>
