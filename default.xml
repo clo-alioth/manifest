@@ -26,9 +26,20 @@
   <default revision="refs/tags/LA.QSSI.13.0.r1-07100.03-qssi.0"
            remote="clo_system"/>
 
+  <!-- GrapheneOS -->
+  <remote name="grapheneos-gitlab"
+          fetch="https://gitlab.com/GrapheneOS/"
+          revision="refs/heads/13" />
+
+  <!-- Github -->
+  <remote name="github"
+          fetch="https://github.com" />
+
   <include name="system.xml"/>
   <include name="vendor.xml"/>
 
   <include name="obsolete.xml"/>
+
+  <include name="custom.xml"/>
 
 </manifest>
