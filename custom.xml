@@ -11,6 +11,13 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <!-- Build soong -->
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="CLO-alioth/android_build_soong" remote="github" revision="tasty">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
   <!-- Chromium Browser (GrapheneOS) -->
   <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos-gitlab" clone-depth="1" />
 
