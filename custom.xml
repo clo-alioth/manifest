@@ -44,4 +44,17 @@
   <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
   <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
 
+  <!-- QCOM Bluetooth -->>
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="CLO-alioth/android_vendor_qcom-opensource_bluetooth-commonsys-intf"
+           remote="github" revision="tasty"/>
+
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="CLO-alioth/android_vendor_qcom-opensource_packages_apps_Bluetooth"
+           remote="github" revision="tasty"/>
+
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="CLO-alioth/android_vendor_qcom_opensource_commonsys_system_bt"
+           remote="github" revision="tasty"/>
+
 </manifest>
