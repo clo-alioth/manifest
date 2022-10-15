@@ -37,4 +37,7 @@
   <!-- Vendor (AOSPA) -->
   <project path="vendor/qcom/common" name="ThankYouMario/proprietary_vendor_qcom_common" remote="github" revision="topaz"/>
 
+  <!-- SeedVault -->
+  <project path="external/seedvault" name="GrapheneOS/platform_external_seedvault" remote="github" revision="13"/>
+
 </manifest>
