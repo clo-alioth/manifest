@@ -36,6 +36,10 @@
   <project path="device/qcom/sepolicy_vndr" name="CLO-alioth/android_device_qcom_sepolicy_vndr"
            remote="github" revision="tasty"/>
 
+  <remove-project name="device/qcom/vendor-common" />
+  <project path="device/qcom/vendor-common" name="CLO-alioth/android_device_qcom_vendor-common"
+           remote="github" revision="tasty"/>
+
   <remove-project name="kernel/build" />
   <project path="device/qcom/kernelscripts" name="CLO-alioth/android_kernel_build" remote="github" revision="tasty">
     <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
