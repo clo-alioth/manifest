@@ -92,4 +92,8 @@
   <project path="vendor/qcom/opensource/power" name="CLO-alioth/android_vendor_qcom_opensource_power"
            remote="github" revision="tasty"/>
 
+  <!-- libhardware -->
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="CLO-alioth/android_hardware_libhardware" remote="github" revision="tasty"/>
+
 </manifest>
